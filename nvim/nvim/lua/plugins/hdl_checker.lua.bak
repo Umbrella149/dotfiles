@@ -1,0 +1,46 @@
+-- return {
+--   -- 1. 针对 nvim-lspconfig 插件进行配置
+--   "neovim/nvim-lspconfig",
+--
+--   -- 2. 使用 opts 函数来确保在加载插件时执行我们的逻辑
+--   opts = {
+--     -- 这是一个覆盖默认配置或添加自定义配置的特殊部分
+--     setup = {
+--       -- 使用 hdl_checker 键来专门配置这个 LSP
+--       hdl_checker = function()
+--         local lspconfig = require("lspconfig")
+--         local home_dir = os.getenv("HOME")
+--         local hdl_checker_path = home_dir .. "/.virtualenvs/hdl-checker-venv/bin/hdl_checker"
+--
+--         -- 检查可执行文件是否存在，如果不存在则发出警告并停止配置
+--         if vim.fn.executable(hdl_checker_path) == 0 then
+--           vim.notify(
+--             "HDL Checker Executable not found at: " .. hdl_checker_path .. ". LSP will not start.",
+--             vim.log.levels.WARN,
+--             { title = "LSP Error" }
+--           )
+--           return
+--         end
+--
+--         -- 定义并设置 hdl_checker LSP
+--         -- 确保 lspconfig 知道 hdl_checker 这个 LSP
+--         if not lspconfig.configs.hdl_checker then
+--           lspconfig.configs.hdl_checker = {
+--             default_config = {
+--               cmd = { hdl_checker_path, "--lsp" },
+--               filetypes = { "vhdl", "verilog", "systemverilog" },
+--               root_dir = lspconfig.util.root_pattern(".hdl_checker.config", ".git"),
+--             },
+--           }
+--         end
+--
+--         -- 调用 setup，使用我们定义的 cmd 路径
+--         lspconfig.hdl_checker.setup({
+--           cmd = { hdl_checker_path, "--lsp" },
+--           filetypes = { "vhdl", "verilog", "systemverilog" },
+--           root_dir = lspconfig.util.root_pattern(".hdl_checker.config", ".git"),
+--         })
+--       end,
+--     },
+--   },
+-- }
