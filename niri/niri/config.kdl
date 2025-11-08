@@ -24,6 +24,9 @@ layer-rule {
 debug {
     honor-xdg-activation-with-invalid-serial
 }
+environment {
+  QT_QPA_PLATFORMTHEME "qt6ct"
+}
 // ------------------------------------------------------
 input {
     keyboard {
@@ -382,7 +385,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
-    Alt+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "~/.local/bin/rofi-toggle.sh"; }
+    // Alt+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "~/.local/bin/rofi-toggle.sh"; }
+    Alt+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: noctalia-shell's lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
 
