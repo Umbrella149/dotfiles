@@ -2,7 +2,7 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
-
+include "rule.kdl"
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -11,6 +11,7 @@ spawn-sh-at-startup "qs -c noctalia-shell"
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-sh-at-startup "xrdb -merge ~/.Xresources"
 spawn-at-startup    "fctix5"
+spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 window-rule {
     geometry-corner-radius 20
     clip-to-geometry true

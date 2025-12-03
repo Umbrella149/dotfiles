@@ -5,7 +5,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "one_monokai",
+      -- colorscheme = "one_monokai",
       colors = {
         blue = "#e06c75",
       },

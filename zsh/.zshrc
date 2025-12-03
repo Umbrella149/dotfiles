@@ -10,6 +10,7 @@ alias ls="lsd --color=auto"
 alias ll="lsd -l --color=auto"
 alias la="lsd -a --color=auto"
 alias lla="lsd -l -a --color=auto"
+alias tree="ls --tree"
 alias ff="fastfetch"
 alias cat="bat"
 function y() {
