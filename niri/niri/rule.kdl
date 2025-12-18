@@ -5,7 +5,7 @@
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-    opacity 0.97
+    // opacity 0.97
     draw-border-with-background false
 }
 window-rule {
