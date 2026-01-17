@@ -31,17 +31,17 @@ palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700'
-color_orange = '#e3b5ff'
-color_fg0 = '#4e0079'
-color_fg1 = '#eadfeb'
-color_purple = '#000000'
-color_bg3 = '#e0b8f7'
-color_green = '#4e0079'
-color_bg1 = '#5a396f'
-color_blue = '#3d3740'
-color_red = '#e3b5ff'
-color_aqua = '#f2d7ff'
-color_yellow = '#ffb0cc'
+color_orange = '#51d7ef'
+color_fg0 = '#00363e'
+color_fg1 = '#dfe2ef'
+color_purple = '#d6e3ff'
+color_bg3 = '#83d3e3'
+color_green = '#00363e'
+color_bg1 = '#004e59'
+color_blue = '#353943'
+color_red = '#51d7ef'
+color_aqua = '#a1efff'
+color_yellow = '#a9c7ff'
 
 [os]
 disabled = false
