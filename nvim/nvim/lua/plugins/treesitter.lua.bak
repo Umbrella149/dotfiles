@@ -50,6 +50,8 @@ return {
       "vimdoc",
       "xml",
       "yaml",
+      "typst",
+      "latex",
     },
   },
   ---@param opts lazyvim.TSConfig
