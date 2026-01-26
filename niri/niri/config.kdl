@@ -31,6 +31,13 @@ environment {
 }
 // ------------------------------------------------------
 input {
+    tablet {
+            // 开启左手模式（相当于旋转 180 度）
+            left-handed
+
+            // 如果你需要将数位板映射到特定屏幕（防止跨屏），可以加上这行：
+            // map-to-output "eDP-1" // 替换为你的显示器名称，可用 niri msg outputs 查看
+        }
     keyboard {
         xkb {
             // You can set rules, model, layout, variant and options.
@@ -386,7 +393,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     // Alt+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "~/.local/bin/rofi-toggle.sh"; }
     Alt+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }

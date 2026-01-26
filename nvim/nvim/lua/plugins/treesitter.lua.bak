@@ -51,6 +51,7 @@ return {
       "xml",
       "yaml",
       "typst",
+      "latex",
     },
   },
   ---@param opts lazyvim.TSConfig

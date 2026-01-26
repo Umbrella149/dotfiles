@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true, desc = "Exit Insert Mode with jk" })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true, desc = "Exit Insert Mode with jk" })
+vim.keymap.set("n", "D", vim.diagnostic.open_float, { desc = "Line Diagnostics" })

@@ -1,0 +1,184 @@
+{
+  "Display Math": {
+    "prefix": "mm",
+    "body": [
+      "$$",
+      "$1",
+      "$$"
+    ],
+    "description": "Display Math"
+  },
+  "Fraction": {
+    "prefix": "frac",
+    "body": [
+      "\\frac{$1}{$2}"
+    ],
+    "description": "Fraction"
+  },
+  "Summation": {
+    "prefix": "sum",
+    "body": [
+      "\\sum_{$1}^{$2}"
+    ],
+    "description": "Summation"
+  },
+  "Product": {
+    "prefix": "prod",
+    "body": [
+      "\\prod_{$1}^{$2}"
+    ],
+    "description": "Product"
+  },
+  "Integral": {
+    "prefix": "int",
+    "body": [
+      "\\int_{$1}^{$2}"
+    ],
+    "description": "Integral"
+  },
+  "Limit": {
+    "prefix": "lim",
+    "body": [
+      "\\lim_{$1 \\to $2}"
+    ],
+    "description": "Limit"
+  },
+  "Infinity": {
+    "prefix": "infty",
+    "body": [
+      "\\infty"
+    ],
+    "description": "Infinity"
+  },
+  "Partial": {
+    "prefix": "part",
+    "body": [
+      "\\partial"
+    ],
+    "description": "Partial Derivative"
+  },
+  "Nabla": {
+    "prefix": "nabla",
+    "body": [
+      "\\nabla"
+    ],
+    "description": "Nabla"
+  },
+  "Approx": {
+    "prefix": "approx",
+    "body": [
+      "\\approx"
+    ],
+    "description": "Approximate"
+  },
+  "Leq": {
+    "prefix": "leq",
+    "body": [
+      "\\leq"
+    ],
+    "description": "Less than or equal"
+  },
+  "Geq": {
+    "prefix": "geq",
+    "body": [
+      "\\geq"
+    ],
+    "description": "Greater than or equal"
+  },
+  "Cdot": {
+    "prefix": "cdot",
+    "body": [
+      "\\cdot"
+    ],
+    "description": "Dot product"
+  },
+  "Times": {
+    "prefix": "times",
+    "body": [
+      "\\times"
+    ],
+    "description": "Cross product"
+  },
+  "alpha": {
+    "prefix": "alpha",
+    "body": [
+      "\\alpha"
+    ],
+    "description": "alpha"
+  },
+  "beta": {
+    "prefix": "beta",
+    "body": [
+      "\\beta"
+    ],
+    "description": "beta"
+  },
+  "gamma": {
+    "prefix": "gamma",
+    "body": [
+      "\\gamma"
+    ],
+    "description": "gamma"
+  },
+  "theta": {
+    "prefix": "theta",
+    "body": [
+      "\\theta"
+    ],
+    "description": "theta"
+  },
+  "pi": {
+    "prefix": "pi",
+    "body": [
+      "\\pi"
+    ],
+    "description": "pi"
+  },
+  "sigma": {
+    "prefix": "sigma",
+    "body": [
+      "\\sigma"
+    ],
+    "description": "sigma"
+  },
+  "omega": {
+    "prefix": "omega",
+    "body": [
+      "\\omega"
+    ],
+    "description": "omega"
+  },
+  "Delta": {
+    "prefix": "Delta",
+    "body": [
+      "\\Delta"
+    ],
+    "description": "Delta"
+  },
+  "Cases (2 lines)": {
+    "prefix": "cases",
+    "body": [
+      "\\begin{cases}",
+      "\t${1:expression} & ${2:condition} \\\\\\\\",
+      "\t${3:expression} & ${4:condition}",
+      "\\end{cases}"
+    ],
+    "description": "Piecewise function (2 cases)"
+  },
+  "Cases (3 lines)": {
+    "prefix": "cases3",
+    "body": [
+      "\\begin{cases}",
+      "\t${1:expression} & ${2:condition} \\\\\\\\",
+      "\t${3:expression} & ${4:condition} \\\\\\\\",
+      "\t${5:expression} & ${6:condition}",
+      "\\end{cases}"
+    ],
+    "description": "Piecewise function (3 cases)"
+  },
+  "Text in Math": {
+    "prefix": "txt",
+    "body": ["\\text{$1}"],
+    "description": "Text inside math mode"
+  }
+}
