@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p docs)",
+      "Bash(mv PLAN.md prefer.md docs/)",
+      "Bash(python3 -c \"import json;d=json.load\\(open\\('nvim-pack-lock.json'\\)\\);print\\(json.dumps\\(d,indent=1\\)[:400]\\)\")"
+    ]
+  }
+}
